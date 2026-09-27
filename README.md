@@ -1,20 +1,20 @@
 # Markdown → Jake's Resume
 
-Un outil gratuit pour écrire son CV en texte simple et le voir mis en page en direct, avec le style du célèbre modèle **Jake's Resume** d'Overleaf.
+A free tool for writing your resume in plain text and seeing it laid out live, in the style of the famous **Jake's Resume** template from Overleaf.
 
-Pas de compte, pas d'inscription : on écrit à gauche, le CV apparaît à droite.
+No account, no sign-up: you write on the left, your resume appears on the right.
 
-## Ce que ça fait
+## What it does
 
-- **Aperçu en direct** : chaque modification s'affiche immédiatement dans le CV.
-- **Le look Jake's Resume** : même police, mêmes titres soulignés, mêmes dates alignées à droite que le modèle LaTeX d'origine.
-- **Export PDF** en un clic, avec un texte lisible par les logiciels de recrutement.
-- **Sauvegarde automatique** : votre CV reste enregistré dans votre navigateur, vous le retrouvez en revenant.
-- **Libre** : ajoutez vos propres sections, dans la langue de votre choix.
+- **Live preview**: every edit shows up instantly in the resume.
+- **The Jake's Resume look**: same font, same underlined headings, same right-aligned dates as the original LaTeX template.
+- **One-click PDF export**, with text readable by applicant tracking systems (ATS).
+- **Auto-save**: your resume stays saved in your browser, so you'll find it again when you come back.
+- **Free-form**: add your own sections, in whatever language you like.
 
-## Comment écrire son CV
+## How to write your resume
 
-Tout en haut, vos coordonnées :
+At the very top, your contact details:
 
 ```
 ---
@@ -26,27 +26,27 @@ github: github.com/ryanlake
 ---
 ```
 
-Ensuite, chaque section commence par `##`, et chaque expérience par `###`. Le symbole `|` sépare ce qui va à gauche de ce qui va à droite :
+Then each section starts with `##`, and each entry starts with `###`. The `|` symbol separates what goes on the left from what goes on the right:
 
 ```
 ## Experience
 
-### Développeur web | Janv. 2023 -- Aujourd'hui
-Entreprise | Paris, France
-- Une réalisation
-- Une autre réalisation
+### Web Developer | Jan. 2023 -- Present
+Company | Paris, France
+- One achievement
+- Another achievement
 ```
 
-Pour les compétences, mettez la catégorie en gras :
+For skills, put the category in bold:
 
 ```
 ## Technical Skills
 
-**Langages**: Python, JavaScript, SQL
+**Languages**: Python, JavaScript, SQL
 ```
 
-Le CV d'exemple chargé au démarrage montre tous les cas. Le bouton **Réinitialiser** permet d'y revenir à tout moment.
+The sample resume loaded on startup demonstrates all these cases. The **Reset** button lets you go back to it at any time.
 
-## Confidentialité
+## Privacy
 
-Votre CV est enregistré uniquement dans votre navigateur. Lors d'un export PDF, il est envoyé au serveur le temps de créer le fichier, puis oublié : rien n'est conservé.
+Your resume is saved only in your browser. When exporting to PDF, it's sent to the server just long enough to generate the file, then forgotten: nothing is stored.

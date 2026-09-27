@@ -1,42 +1,52 @@
-# sv
+# Markdown → Jake's Resume
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Un outil gratuit pour écrire son CV en texte simple et le voir mis en page en direct, avec le style du célèbre modèle **Jake's Resume** d'Overleaf.
 
-## Creating a project
+Pas de compte, pas d'inscription : on écrit à gauche, le CV apparaît à droite.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Ce que ça fait
 
-```sh
-# create a new project
-npx sv create my-app
+- **Aperçu en direct** : chaque modification s'affiche immédiatement dans le CV.
+- **Le look Jake's Resume** : même police, mêmes titres soulignés, mêmes dates alignées à droite que le modèle LaTeX d'origine.
+- **Export PDF** en un clic, avec un texte lisible par les logiciels de recrutement.
+- **Sauvegarde automatique** : votre CV reste enregistré dans votre navigateur, vous le retrouvez en revenant.
+- **Libre** : ajoutez vos propres sections, dans la langue de votre choix.
+
+## Comment écrire son CV
+
+Tout en haut, vos coordonnées :
+
+```
+---
+name: Ryan Lake
+phone: 123-456-7890
+email: ryan@su.edu
+linkedin: linkedin.com/in/ryanlake
+github: github.com/ryanlake
+---
 ```
 
-To recreate this project with the same configuration:
+Ensuite, chaque section commence par `##`, et chaque expérience par `###`. Le symbole `|` sépare ce qui va à gauche de ce qui va à droite :
 
-```sh
-# recreate this project
-pnpm dlx sv@0.17.1 create --template minimal --types ts --add tailwindcss="plugins:none" --no-download-check --install pnpm ./
+```
+## Experience
+
+### Développeur web | Janv. 2023 -- Aujourd'hui
+Entreprise | Paris, France
+- Une réalisation
+- Une autre réalisation
 ```
 
-## Developing
+Pour les compétences, mettez la catégorie en gras :
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```
+## Technical Skills
 
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+**Langages**: Python, JavaScript, SQL
 ```
 
-## Building
+Le CV d'exemple chargé au démarrage montre tous les cas. Le bouton **Réinitialiser** permet d'y revenir à tout moment.
 
-To create a production version of your app:
+## Confidentialité
 
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Votre CV est enregistré uniquement dans votre navigateur. Lors d'un export PDF, il est envoyé au serveur le temps de créer le fichier, puis oublié : rien n'est conservé.
